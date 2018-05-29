@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Albert Muravtsev](https://up.htmlacademy.ru/htmlcss/21/user/517137).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Заводов].(https://up.htmlacademy.ru/htmlcss/21/user/309545)
 
 ---
 
