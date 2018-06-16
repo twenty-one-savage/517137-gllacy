@@ -1,0 +1,272 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: none;
+
+  background-color: #849d8f;
+}
+
+.vissualy-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0;
+  clip: rect (0,0,0,0);
+  overflow: hidden;
+}
+
+a {
+  color: #ffffff;
+}
+
+.main-navigation {
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+.time {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.phone-number {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.submenu,
+.site-navigation,
+.user-navigation,
+.slides-switches,
+.links-list,
+.social-list,
+.fat-list,
+.modal-list {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+a:hover,
+a:focus {
+  color: #ffbc9e;
+}
+
+.free {
+  width: 560px;
+  min-height: 229px;
+  padding: 15px 20px 23px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.raspberry {
+  background-image: url("../img/index/raspberry.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.chocolate {
+  background-image: url("../img/index/chocolate.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.free-text {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.free p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.hits,
+.features {
+  list-style: none;
+}
+
+.hit-item {
+  text-align: center;
+}
+
+.item-picture {
+  border-radius: 50%;
+}
+
+.price-bold {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-us h1 {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about-us {
+  background-image: url("../img/index/wafer.jpg");
+  background-repeat: repeat;
+  background-position: cover;
+}
+.point {
+    color: #323232;
+}
+
+.tenreceipts {
+  background-image: url("../img/index/strawberry.jpg");
+  border-radius: 20px;
+  width: 560px;
+  height: 220px;
+}
+
+.tenreceipts-text {
+  color: #323232;
+}
+
+.tenreceipts-a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.subscription {
+  background-image: url("../img/index/subscription-background.png");
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  border: 5px solid black;
+  width: 550px;
+  height: 210px;
+}
+
+.subscription p {
+  color: #5a5a5a;
+}
+
+.email-subscription {
+  color: #999999;
+  line-height: 24px;
+}
+
+.address {
+  background-image: url("../img/index/addres-background.png");
+  background-repeat: no-repeat;
+  border-radius: 15px
+  width: 302px;
+  height: 305px;
+}
+
+.address p {
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+}
+.address .bold {
+  color: #323232;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+
+.want-it  {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+  width: 165px;
+  min-height: 46px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.want-it {
+  display: block;
+  width: 165px;
+  height: 46px;
+  border-radius: 20px;
+}
+
+.links-list li{
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.links-list li:first-child {
+  font-weight: bold;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.search-icon {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.user-login,
+.user-password {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Каталог*/
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.sort {
+  width: 194px;
+  height: 57px;
+}
+
+.filter-title {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.rating-sort:hover {
+  color: #323232;
+}
+
+.fat-list li {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.paggination-list {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.paggination-list a  {
+  text-decoration: none;
+}
