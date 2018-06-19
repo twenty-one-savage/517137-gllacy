@@ -185,27 +185,6 @@ a:focus {
 }
 
 
-.want-it  {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 24px;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 15px;
-  width: 165px;
-  min-height: 46px;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.want-it {
-  display: block;
-  width: 165px;
-  height: 46px;
-  border-radius: 20px;
-}
-
 .links-list li{
   font-size: 13px;
   line-height: 18px;
@@ -231,6 +210,53 @@ a:focus {
   line-height: 24px;
 }
 
+/*Кнопки, не задается фон конпоке, Я УЖЕ НЕ ЗНАЮ ЧТО ПОПРОБОВАТЬ*/
+
+.button {
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 280px;
+  height: 65px;
+}
+
+
+.want-it {
+  display: inline-block;
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 165px;
+  min-height: 46px;
+  border-radius: 20px;
+
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 10px 0;
+
+}
+
+/*Модальное окно обратной связи*/
+.modal-item input {
+  color: #999999;
+  line-height: 24px;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 3px;
+}
+
+.modal-item input:hover {
+  border: 2px solid #d3d3d2;
+}
+
+.modal-item input:active {
+  border: 2px solid #8fbdec;
+}
 /*Каталог*/
 
 .breadcrumbs {
