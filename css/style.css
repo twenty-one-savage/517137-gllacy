@@ -19,7 +19,7 @@ body {
   margin: -1px;
   border: 0px;
   padding: 0;
-  clip: rect (0,0,0,0);
+  clip:  (0,0,0,0);
   overflow: hidden;
 }
 
@@ -27,11 +27,35 @@ a {
   color: #ffffff;
 }
 
+a:hover,
+a:focus {
+  color: #ffbc9e;
+}
+
+/*Списки без марок*/
+.submenu,
+.site-nav,
+.user-nav,
+.slides-switches,
+.links-list,
+.social-list,
+.fat-list,
+.modal-list,
+.breadcrumbs {
+  list-style: none;
+}
+
+  /*HEADER*/
+
 .main-navigation {
+
   line-height: 18px;
   color: #ffffff;
+
   background-color: #849d8f;
 }
+
+
 
 .time {
   font-size: 14px;
@@ -44,27 +68,7 @@ a {
   font-weight: bold;
 }
 
-.submenu,
-.site-navigation,
-.user-navigation,
-.slides-switches,
-.links-list,
-.social-list,
-.fat-list,
-.modal-list {
-  list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
-}
-
-a:hover,
-a:focus {
-  color: #ffbc9e;
-}
-
+/*МЭЙН*/
 .free {
   width: 560px;
   min-height: 229px;
@@ -122,6 +126,7 @@ a:focus {
 }
 
 .about-us {
+  border-radius: 15px;
   background-image: url("../img/index/wafer.jpg");
   background-repeat: repeat;
   background-position: cover;
@@ -131,10 +136,11 @@ a:focus {
 }
 
 .tenreceipts {
-  background-image: url("../img/index/strawberry.jpg");
-  border-radius: 20px;
   width: 560px;
   height: 220px;
+
+  background-image: url("../img/index/strawberry.jpg");
+  border-radius: 20px;
 }
 
 .tenreceipts-text {
@@ -148,12 +154,13 @@ a:focus {
 }
 
 .subscription {
-  background-image: url("../img/index/subscription-background.png");
-  background-repeat: no-repeat;
-  border-radius: 20px;
-  border: 5px solid black;
   width: 550px;
   height: 210px;
+
+  background-image: url("../img/index/subscription-background.png");
+  background-repeat: no-repeat;
+  border: 5px solid black;
+  border-radius: 20px;
 }
 
 .subscription p {
@@ -166,11 +173,12 @@ a:focus {
 }
 
 .address {
-  background-image: url("../img/index/addres-background.png");
-  background-repeat: no-repeat;
-  border-radius: 15px
   width: 302px;
   height: 305px;
+
+  background-image: url("../img/index/addres-background.png");
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
 
 .address p {
@@ -184,8 +192,8 @@ a:focus {
   line-height: 22px;
 }
 
-
-.links-list li{
+/*Футер*/
+.links-list li {
   font-size: 13px;
   line-height: 18px;
 }
@@ -210,39 +218,66 @@ a:focus {
   line-height: 24px;
 }
 
-/*Кнопки, не задается фон конпоке, Я УЖЕ НЕ ЗНАЮ ЧТО ПОПРОБОВАТЬ*/
+/*РАЗОБРАЛСЯ С КНПОКОЙ, БЫЛ УКАЗАН У ССЫЛКИ ТИП "КНОПКА"*/
+
 
 .button {
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  width: 280px;
-  height: 65px;
-}
-
-
-.want-it {
   display: inline-block;
-  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  width: 165px;
-  min-height: 46px;
-  border-radius: 20px;
+  vertical-align: top;
+  padding: 8px 23px;
+  padding-bottom: 12px;
 
-  color: #ffffff;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  text-decoration: none;
+  color: #ffffff;
   text-align: center;
-  vertical-align: middle;
-  border-radius: 15px;
-  box-sizing: border-box;
-  padding: 10px 0;
+  text-transform: none;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  white-space: normal;
 
+  background-color: #f26843;
+  background: -webkit-linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+  outline: none;
 }
 
-/*Модальное окно обратной связи*/
-.modal-item input {
+
+
+/*Общие стили для всех модальных окон*/
+
+.modal {
   color: #999999;
+
+  background-color: #ffffff;
+  background-image: url("../img/index/modal-background.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h3 {
+  color: #000000;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+/*Модальное окно входа*/
+
+.login a {
+  color: #323232;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+/*Стили для состояний инпутов*/
+.modal input {
+  color: #323232;
   line-height: 24px;
 
   background-color: #ffffff;
@@ -250,13 +285,35 @@ a:focus {
   border-radius: 3px;
 }
 
-.modal-item input:hover {
+.modal input:hover {
   border: 2px solid #d3d3d2;
 }
 
-.modal-item input:active {
+.modal input:active {
   border: 2px solid #8fbdec;
 }
+
+.modal::placeholder {
+  color: #999999;
+}
+
+.feedback textarea {
+  color: #323232;
+  line-height: 24px;
+
+  background-color: #ffffff;
+  border: 1px solid #d3d3d2;
+  border-radius: 3px;
+}
+
+.feedback textarea:hover {
+  border: 2px solid #d3d3d2;
+}
+
+.feedback textarea:active {
+  border: 2px solid #8fbdec;
+}
+
 /*Каталог*/
 
 .breadcrumbs {
@@ -289,10 +346,50 @@ a:focus {
 }
 
 .paggination-list {
+  list-style: none;
   font-size: 16px;
   line-height: 18px;
 }
 
 .paggination-list a  {
   text-decoration: none;
+}
+/*Фильтры*/
+.sort-background {
+  width: 194px;
+  height: 37px;
+
+  background-color: rgb(248, 247, 244);
+  opacity: 0.2;
+}
+
+.fat-container {
+  background-image: url("../img/catalog/fat-backgorund.png");
+  background-repeat: no-repeat;
+}
+
+.fillers-list {
+  list-style: none;
+}
+
+.fillers-container {
+  background-image: url("../img/catalog/fillers-background.png");
+  background-repeat: no-repeat;
+}
+
+.btn-filter {
+  width: 148px;
+  height: 41px;
+
+  color: #ffffff;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.188);
+}
+
+.catalog-list {
+  list-style: none;
 }
